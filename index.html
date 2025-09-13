@@ -1,0 +1,143 @@
+<!DOCTYPE html> <html> 
+  <head> 
+    <title>AR Image Example</title> 
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script> 
+  </head> 
+  <body style="margin: 0; overflow: hidden;">
+     <!-- AR Scene --> 
+      <a-scene embedded arjs>
+         <!-- Marker (Hiro default) --> 
+          <a-marker preset="hiro"> 
+            <!-- Show image when marker detected --> 
+             <!-- <a-image src="myimage.png" width="2" height="2" position="0 0 0" rotation="-90 0 0"></a-image> --> <a-entity 
+              gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Fox/glTF-Binary/Fox.glb)" 
+              scale="0.05 0.05 0.05" 
+              position="0 0 1" 
+              rotation="0 90 -90" 
+              animation-mixer ="clip: *; loop: repeat;"> 
+            </a-entity>
+            </a-marker> 
+          <!-- AR camera --> 
+          <a-marker type="pattern" url="pattern-h.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-a.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-d.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-g.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-i.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-j.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-n.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-s.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <a-marker type="pattern" url="pattern-letter-t.patt">
+            <a-video 
+              src="a.mp4" 
+              width="2" 
+              height="2" 
+              position="0 0 0" 
+              rotation="-90 0 0" 
+              autoplay="true"
+              loop="true"
+              preload = "true"
+              >
+            </a-video>
+          </a-marker>
+          <!-- AR camera --> 
+          <a-entity camera></a-entity> 
+      </a-scene> 
+</body> 
+</html>
